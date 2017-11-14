@@ -5,3 +5,4 @@ build
 .tscache
 *.map
 client/js
+server
