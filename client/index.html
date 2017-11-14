@@ -1,3 +1,16 @@
-<html manifest="peer.appcache">
-
+<html manifest="">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			window.onload=function() {
+				requirejs(['client/main'],function(main) {
+					alert("Ergebnis: "+main());
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Test</h1>
+	</body>
 </html>
