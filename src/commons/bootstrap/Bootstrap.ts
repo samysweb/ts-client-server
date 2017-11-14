@@ -1,6 +1,6 @@
 class Bootstrap{
     hi(s: String) {
-        return "hello " +  name;
+        return "hello " +  s;
     }
 }
 export = Bootstrap;

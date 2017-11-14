@@ -20,11 +20,12 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					rootDir : "src/",
+					module: "commonjs",
+					modeResolution: "node",
 					sourceRoot: "src/"
 				},
-				rootDir : "./",
 				src: ["src/commons/**/*.ts", "src/server/**/*.ts"],
-				outDir: "build/js"
+				outDir: "server"
 			}
 		},
 		requirejs: {
@@ -44,7 +45,7 @@ module.exports = function(grunt) {
 				src: ["build/js/commons/**/*","build/js/client/**/*"]
 			},
 			server: {
-				src: ["build/js/commons/**/*", "build/js/server/**/*"]
+				src: ["server/commons/**/*", "server/server/**/*"]
 			}
 		}
 	});
@@ -56,5 +57,6 @@ module.exports = function(grunt) {
 	
 	// Default task(s).
 	grunt.registerTask('client', ['clean:client','ts:client','requirejs:compile']);
+	grunt.registerTask('server', ['clean:server','ts:server']);
 
 };
