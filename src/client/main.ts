@@ -1,6 +1,6 @@
 import bootstrap = require('commons/bootstrap/Bootstrap');
-function main():string {
+function main():void {
 	let test = new bootstrap();
-	return test.hi('abcd');
+	alert(test.hi('Client'));
 }
 export = main;

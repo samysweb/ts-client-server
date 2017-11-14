@@ -1,2 +1,0 @@
-define("commons/bootstrap/Bootstrap",["require","exports"],function(t,n){"use strict";return function(){function t(){}return t.prototype.hi=function(t){return"hello "+t},t}()}),define("client/main",["require","exports","commons/bootstrap/Bootstrap"],function(t,n,o){"use strict";function r(){return(new o).hi("abcd")}return r});
-//# sourceMappingURL=main.js.map
