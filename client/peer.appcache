@@ -1,9 +1,0 @@
-CACHE MANIFEST
-# v1 - 2011-08-13
-# This is a comment.
-http://www.example.com/index.html
-http://www.example.com/js/bootloader.js
-
-# Fallback content
-FALLBACK:
-/index.html
